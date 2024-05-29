@@ -98,31 +98,31 @@
 //!!! GUESS NUMBER
 //* Program 1*20 arasında rasgele bir sayı tutacak ve kullanıcının bu sayıyı 5 kere(hak) de bilmesini isteyecektir. Her yanlışta hakkını bir düşürecek ve ARTTIR/AZALT diyerek kullanıcıyı yönlendirecektir.Sonuç olarak kullanıcının hakkı 0 olursa "Üzgünüz bilemediniz" eğer 5 hak içinde bildi ise "Tebrikler  bildiniz" yazacaktır.
 
-// const rastgele=Math.ceil(Math.random()*20)
+const rastgele=Math.ceil(Math.random()*20)
 
-// console.log(rastgele);
+console.log(rastgele);
 
-// let hak=5;
+let hak=5;
 
-// while(hak>0) {
+while(hak>0) {
 
-//  const guess = +prompt("sayı tahmin edinizz");
+ const guess = +prompt("sayı tahmin edinizz");
  
-//  if (rastgele == guess) {
-//    console.log("tebrikler doğru tahmin ettiniz 👯‍♂️");
-//    break;
-//  } else if (rastgele > guess) {
-//    console.log("ARTTIR 📈");
-//    hak--
-//  } else {
-//    console.log("AZALT 📉");
-//    hak--
-//  }
-// }
+ if (rastgele == guess) {
+   console.log("tebrikler doğru tahmin ettiniz 👯‍♂️");
+   break;
+ } else if (rastgele > guess) {
+   console.log("ARTTIR 📈");
+   hak--
+ } else {
+   console.log("AZALT 📉");
+   hak--
+ }
+}
 
-// if(hak==0){
-//     console.log("5 hakkında da doğru tahmin edemedin");
-// }
+if(hak==0){
+    console.log("5 hakkında da doğru tahmin edemedin");
+}
 //************************** */
 
 
