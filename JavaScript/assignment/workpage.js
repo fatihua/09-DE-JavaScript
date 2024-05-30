@@ -405,43 +405,142 @@
 
 //* 1- fiyatlar dizisinde her bir fiyata %10 zam yapalım. NOT:ForEach() kullanılmalı ve orijinal dizi değiştirilmeli.
 
-const fiyatlar = [100,250,50,89];
+// const fiyatlar = [100,250,50,89];
 
-fiyatlar.map((a, i, arr)=>(arr[i] = a * 1.1)).forEach((a)=> console.log(Math.round(a)))
+// fiyatlar.map((a, i, arr)=>(arr[i] = a * 1.1)).forEach((a)=> console.log(Math.round(a)))
 
-//? map(a, index, arr) yapısını kullandık.
+// //? map(a, index, arr) yapısını kullandık.
 
-//* 2- fiyatlar dizisindeki fiyatı 90'dan büyük olan değerleri konsola tek tek bastırınız.
+// //* 2- fiyatlar dizisindeki fiyatı 90'dan büyük olan değerleri konsola tek tek bastırınız.
 
-//? 1.
-const fiyatlar2 =[100,90,95,125,300,1000,85,70,50,93]
+// //? 1.
+// const fiyatlar2 =[100,90,95,125,300,1000,85,70,50,93]
 
-fiyatlar2.forEach((a)=>{
-    if(a > 90){
-        console.log(a);
-    }
-})
+// fiyatlar2.forEach((a)=>{
+//     if(a > 90){
+// //         console.log(a);
+//     }
+// })
 
 //? 2.
-fiyatlar2.filter((a)=> a > 90).forEach((a)=>console.log(a))
+// fiyatlar2.filter((a)=> a > 90).forEach((a)=>console.log(a))
 
 
-//* 3- fiyatlar dizisindeki fiyatı 110'dan küçük olan değerlere %10 artış yapın ve bu değerleri konsola tek tek bastırınız.
+// //* 3- fiyatlar dizisindeki fiyatı 110'dan küçük olan değerlere %10 artış yapın ve bu değerleri konsola tek tek bastırınız.
 
-const fiyatlar3 =[100,90,95,125,300,1000,85,70,50,93]
+// const fiyatlar3 =[100,90,95,125,300,1000,85,70,50,93]
 
-fiyatlar3.filter((a)=>a < 110).map((a)=>a * 1.1).forEach((a)=>console.log(Math.round(a)))
-
-
-
-//* 4- maaşlar dizisinde 4000'den düşük olan maaslara %50 zam yapmak istiyoruz ve bunu ayrı dizi olarak saklamak istiyoruz.
-
-const maaslar = [3000,5000,4000,6000,6500];
-
-const yeniMaas = maaslar.filter((a)=>a < 4000).map((a)=>a*1.5)
-console.log(yeniMaas);
+// fiyatlar3.filter((a)=>a < 110).map((a)=>a * 1.1).forEach((a)=>console.log(Math.round(a)))
 
 
-//* 5- Maaşı 4000'den büyük olanlara %25 zam yaparak sonuçları konsolda yazdıralım.*/
 
-maaslar.filter((a)=>a > 4000).map((a)=> a * 1.25).forEach((a)=>console.log(a))
+// //* 4- maaşlar dizisinde 4000'den düşük olan maaslara %50 zam yapmak istiyoruz ve bunu ayrı dizi olarak saklamak istiyoruz.
+
+// const maaslar = [3000,5000,4000,6000,6500];
+
+// const yeniMaas = maaslar.filter((a)=>a < 4000).map((a)=>a*1.5)
+// console.log(yeniMaas);
+
+
+// //* 5- Maaşı 4000'den büyük olanlara %25 zam yaparak sonuçları konsolda yazdıralım.*/
+
+// maaslar.filter((a)=>a > 4000).map((a)=> a * 1.25).forEach((a)=>console.log(a))
+
+//* 10.TEAMWORK - 15.SORU / Write a js code that will uniqe the elements of the array containing repetitive elements.
+
+// const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+
+// function removeDuplicates(a) {
+
+//     let uniqueArray = []
+
+//     for(let i in a)
+//     if(!uniqueArray.includes(a[i])){
+//         uniqueArray.push(a[i])
+//     }
+        
+//     return uniqueArray;
+// }
+// console.log(removeDuplicates(arrayWithDuplicates));
+
+
+//    const uniqueArray = removeDuplicates(arrayWithDuplicates);
+   // uniqueArray will be [1, 2, 3, 4, 5]
+   
+
+
+//* 10.TEAMWORK - 19.SORU /  Write a function that returns all elements of a string in order.
+
+// let str1 = 'Hello World';
+
+// function iterateString(a){
+
+//     let arr = a.split("")
+//     let result= arr.forEach((b)=>console.log(b))
+
+//     return result;
+    
+// }
+// iterateString(str1);
+
+//OUTPUT:
+//    H
+//    e
+//    l
+//    l
+//    o
+//    W
+//    o
+//    r
+//    l
+//    d
+
+//? 2.yol
+
+// function iterateStr (x){
+//     for(let i=0; i < x.length; i++){
+//         console.log(x[i]);
+//     }
+// }
+// iterateStr(str1)
+
+//* coding challenge - You are given an array of numbers. Calculate the average of these numbers and then find the numbers that are above this average. Write a function to return these numbers.
+
+// function aboveAverageNumbers(a) {
+
+//     const average =Math.floor(a.reduce((sum, num)=>sum+num)/a.length)
+//     console.log(average);
+//     const result = a.filter((num)=>num >= average)
+
+//     return result
+//    }
+
+// // Example usage:
+// console.log(aboveAverageNumbers([1, 2, 4, 6, 3, 7, 8]));
+// // Output: [4, 6, 7, 8]
+
+
+//***** */
+
+// const myObj = {
+//     // course:"Clarus"
+// }
+// // myObj.course = "Clarusway";
+// console.log(myObj["course"]); // Clarusway
+
+
+//** */
+
+const products = [
+    {"model": "HP Pavilion", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 999},
+    {"model": "Dell XPS", "processor": "Intel Core i5", "ram": "8GB", "storage": "256GB SSD", "price": 899},
+    {"model": "MacBook Air", "processor": "Apple M1", "ram": "8GB", "storage": "256GB SSD", "price": 1099},
+    {"model": "Asus ROG Strix", "processor": "AMD Ryzen 9", "ram": "32GB", "storage": "1TB SSD", "price": 1499},
+    {"model": "Lenovo ThinkPad", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 1199}
+  ];
+  function findHighestPriceProduct(products) {
+    return products.sort((a,b)=> b.price - a.price)[0];
+  }
+  const highestPriceProduct = findHighestPriceProduct(products);
+  console.log(highestPriceProduct);
+  
