@@ -214,35 +214,35 @@
 //!1-Bu şekilde girilen stringi "altı,bir,iki,dört,beş,üç,yedi,sekiz,dokuz"
 //! 612453789   bu hale dönüştüren program
 
-let numLetter = "altı,bir,iki,dört,beş,üç,yedi,sekiz,dokuz"
+// let numLetter = "altı,bir,iki,dört,beş,üç,yedi,sekiz,dokuz"
 
-let convertNum = {
-    "sıfır":0,
-    "bir":1,
-    "iki":2,
-    "üç":3,
-    "dört":4,
-    "beş":5,
-    "altı":6,
-    "yedi":7,
-    "sekiz":8,
-    "dokuz":9
-}
+// let convertNum = {
+//     "sıfır":0,
+//     "bir":1,
+//     "iki":2,
+//     "üç":3,
+//     "dört":4,
+//     "beş":5,
+//     "altı":6,
+//     "yedi":7,
+//     "sekiz":8,
+//     "dokuz":9
+// }
 
-let numArray = numLetter.split(",")
-// console.log(numArray);
+// let numArray = numLetter.split(",")
+// // console.log(numArray);
 
-function convert (a){
+// function convert (a){
 
-    let newNum = []
+//     let newNum = []
 
-  for(let i of a){
-   i = convertNum[i]
-    newNum.push(i)
-    }
-    return newNum.join("")
-}
-console.log(convert(numArray));
+//   for(let i of a){
+//    i = convertNum[i]
+//     newNum.push(i)
+//     }
+//     return newNum.join("")
+// }
+// console.log(convert(numArray));
 
 
 //!2-Bir dizi içindeki sayıları asal olanlarını filtreleyen bir  fonksiyonu oluşturun.(filter ile yapılması önerilen)
@@ -280,4 +280,70 @@ console.log(convert(numArray));
 
 //!4 -verilen sayıyı yazıya çeviren program
 
+let number1 = "123456789"
+let number2 = number1.toString()
+console.log(number2);
+let defineNumber1 = {
+    "0" : "sıfır",
+    "1" : "bir",
+    "2" : "iki",
+    "3" : "üç",
+    "4" : "dört",
+    "5" : "beş", 
+    "6" : "altı",
+    "7" : "yedi",
+    "8" : "sekiz",
+    "9" : "dokuz"   
+}
 
+// function convertToString (a){
+
+//     let newArr1 = a.split("")
+// //     console.log(newArr1);
+//     let result = []
+//     for(let i of newArr1){
+//        defineNumber1[i] == i
+//         result.push(defineNumber1[i])
+// //         console.log(result);
+        
+//     }return result.join(" ")
+
+// }
+// console.log(convertToString(number1)); 
+
+let defineNumber2 = {
+    "1" : "on",
+    "2" : "yirmi",
+    "3" : "otuz",
+    "4" : "kırk",
+    "5" : "elli",
+    "6" : "altmış",
+    "7" : "yetmiş",
+    "8" : "seksen",
+    "9" : "doksan",
+}
+
+let defineNumber3 = {
+    "1" : "yüz",
+    "2" : "ikiyüz",
+    "3" : "üçyüz",
+    "4" : "dörtyüz",
+    "5" : "beşyüz",
+    "6" : "altıyüz",
+    "7" : "yediyüz",
+    "8" : "sekizyüz",
+    "9" : "dokuzyüz"
+}
+let defineNumber4= {
+    "1" : "bin",
+    "2" : "ikibin",
+    "3" : "üçbin",
+    "4" : "dörtbin",
+    "5" : "beşbin",
+    "6" : "altıbin",
+    "7" : "yedibin",
+    "8" : "sekizbin",
+    "9" : "dokuzbin"
+}
+let defineNumber5 = 0
+console.log(defineNumber5);

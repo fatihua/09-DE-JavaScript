@@ -531,16 +531,16 @@
 
 //** */
 
-const products = [
-    {"model": "HP Pavilion", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 999},
-    {"model": "Dell XPS", "processor": "Intel Core i5", "ram": "8GB", "storage": "256GB SSD", "price": 899},
-    {"model": "MacBook Air", "processor": "Apple M1", "ram": "8GB", "storage": "256GB SSD", "price": 1099},
-    {"model": "Asus ROG Strix", "processor": "AMD Ryzen 9", "ram": "32GB", "storage": "1TB SSD", "price": 1499},
-    {"model": "Lenovo ThinkPad", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 1199}
-  ];
-  function findHighestPriceProduct(products) {
-    return products.sort((a,b)=> b.price - a.price)[0];
-  }
-  const highestPriceProduct = findHighestPriceProduct(products);
-  console.log(highestPriceProduct);
+// const products = [
+//     {"model": "HP Pavilion", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 999},
+//     {"model": "Dell XPS", "processor": "Intel Core i5", "ram": "8GB", "storage": "256GB SSD", "price": 899},
+//     {"model": "MacBook Air", "processor": "Apple M1", "ram": "8GB", "storage": "256GB SSD", "price": 1099},
+//     {"model": "Asus ROG Strix", "processor": "AMD Ryzen 9", "ram": "32GB", "storage": "1TB SSD", "price": 1499},
+//     {"model": "Lenovo ThinkPad", "processor": "Intel Core i7", "ram": "16GB", "storage": "512GB SSD", "price": 1199}
+//   ];
+//   function findHighestPriceProduct(products) {
+//     return products.sort((a,b)=> b.price - a.price)[0];
+//   }
+//   const highestPriceProduct = findHighestPriceProduct(products);
+//   console.log(highestPriceProduct);
   
