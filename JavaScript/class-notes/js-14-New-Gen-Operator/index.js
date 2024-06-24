@@ -243,7 +243,7 @@ console.log("TOPLAM", toplam(1,5,7,9,3)); // 25
 //*  SPREAD (...)
 //* =============================================
 
-//? pread operatörü ise iterables olan bir elemanı bireysel değerler haline getirir.
+//? spread operatörü ise iterables olan bir elemanı bireysel değerler haline getirir.
 
 
 const ucanAraclar = ["helicopter", "drone", "ucak", "fuze"]
@@ -252,7 +252,7 @@ const karaAracları = ["araba", "bisiklet", "marti"]
 const tasitlar = [ucanAraclar, karaAracları]
 console.log(tasitlar);
 
-const flatTasitlar = [...ucanAraclar, ...karaAracları] // direk içindekini alıp birleştiriyor.
+const flatTasitlar = [...ucanAraclar, ...karaAracları] // direk içindekini alıp birleştiriyor. // bu şekilde yapılan atamada atama yapılan value değişmiyor, üç nokta kullanılmadan atanırsa karşılıklı etkileşim oluyor, atanılan bilgi değişirse ilgili value da değişiyor.
 console.log(flatTasitlar);
 
 
