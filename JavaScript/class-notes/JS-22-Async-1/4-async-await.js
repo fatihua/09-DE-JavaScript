@@ -19,11 +19,28 @@ const defaultImage =
 
 
 const getData = async () => {
-   const res = await fetch("https://api.tvmaze.com/search/shows?q=girls")
+
+  try{
+    const res = await fetch("https://api.tvmaze.com/search/shows?q=girls")
+
+   //? error handling
+
+   if(!res.ok){
+    throw new Error(`url'de hata var ${res.status}`) // throw kodu durdurur
+    console.log("hata"); // throw sonrasında kod işlemediğini göstermek amacıyla yazıldı. bu amaçla try-catch ikilisini kullanıyoruz.
+   }
 
    const veri = await res.json()
 
    ekranaBastır(veri)
+  }catch(error){
+    console.log(error);
+    console.log("try-catch sayesinde kod devam ediyor");
+    document.querySelector("section").innerHTML = `
+    <h1>${error}</h1>
+    <img src="./img/404.png"/>
+    `
+  }
 }
 getData();
 
@@ -35,15 +52,9 @@ const ekranaBastır=(data)=>{
 
     data.forEach((program)=>{
       document.querySelector("section").innerHTML += `
-      
-      `
-     
-      
-  
-    
-        
+      <h1 class="text-danger">${program.show.name}</h1>
+      <img src="${program.show.image?.medium  || defaultImage}"/>
+      `        
     })
-
-    
 }
 
